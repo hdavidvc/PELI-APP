@@ -13,6 +13,8 @@ import { SearchComponent } from './components/search/search.component';
 import { PeliculaComponent } from './pelicula/pelicula.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { NoimgPipe } from './pipes/noimg.pipe';
+import { TopBannerComponent } from './components/TopBanner.Component';
+
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { NoimgPipe } from './pipes/noimg.pipe';
     SearchComponent,
     PeliculaComponent,
     LoadingComponent,
-    NoimgPipe
+    NoimgPipe,
+    TopBannerComponent
   ],
   imports: [
     BrowserModule,
