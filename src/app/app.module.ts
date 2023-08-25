@@ -15,6 +15,7 @@ import { LoadingComponent } from './components/loading/loading.component';
 import { NoimgPipe } from './pipes/noimg.pipe';
 import { TopBannerComponent } from './components/TopBanner.Component';
 
+import { AdsenseModule } from 'ng2-adsense';
 
 
 @NgModule({
@@ -32,7 +33,11 @@ import { TopBannerComponent } from './components/TopBanner.Component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AdsenseModule.forRoot({
+      adClient: 'ca-pub-8791984262740129',
+      adSlot: 1498632190,
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
